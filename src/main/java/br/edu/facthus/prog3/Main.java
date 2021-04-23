@@ -24,6 +24,9 @@ public class Main {
 
 	public static void exercicioGrupo06() {
 		// TODO: acrescentar nomes grupo 6
+		System.out.println("Igor Sampaio Ribeiro");
+		System.out.println("Pierre Mendes Salatiel");
+		System.out.println("Thyago Mariano de Oliveira ");
 	}
 
 	public static void exercicioGrupo07() {
