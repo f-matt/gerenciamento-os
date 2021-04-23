@@ -3,7 +3,7 @@ package br.edu.facthus.prog3;
 public class Main {
 	
 	public static void exercicioGrupo01() {
-		System.out.println("Grupo 01\n");
+		System.out.println("GRUPO 01\n");
 		System.out.println("Cleiton dos Santos Rosa");
 		System.out.println("João Pedro Oliveira");
 		System.out.println("Mário Eduardo Gonçalves Fortes Filho");
