@@ -12,6 +12,10 @@ public class Main {
 
 	public static void exercicioGrupo03() {
 		// TODO: acrescentar nomes grupo 3
+		System.out.println("Thiago Nogueira Pires");
+		System.out.println("Pedro Paulo Nascimento Pessoa");
+		System.out.println("Claudionor Freitas de Sousa");
+		System.out.println("Bruna Moura Costa");
 	}
 
 	public static void exercicioGrupo04() {
