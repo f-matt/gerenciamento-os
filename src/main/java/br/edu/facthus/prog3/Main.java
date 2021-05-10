@@ -31,7 +31,9 @@ public class Main {
 	}
 
 	public static void exercicioGrupo05() {
-		// TODO: acrescentar nomes grupo 5
+		System.out.println("Breno Oliveira Alves Miranda");
+		System.out.println("Katia Caroline Alves Silva");
+		System.out.println("Marcos Paulo Sartorato");
 	}
 
 	public static void exercicioGrupo06() {
