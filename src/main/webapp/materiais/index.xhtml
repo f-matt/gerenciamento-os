@@ -35,10 +35,32 @@
     					<p:commandButton id="btnPesquisa" 
     						value="Pesquisar"
     						icon="pi pi-search" 
-    						action="#{materiaisView.pesquisa}" />
+    						action="#{materiaisView.pesquisa}"
+    						update="tblMateriais" />
+    						
+    					<p:commandButton id="btnNovo" 
+    						value="Novo"
+    						icon="pi pi-plus" 
+    						action="#{materiaisView.novo}"
+    						style="margin-left: 10px" />
     				</div>
     			</div>
+    			
+    			<p:dataTable id="tblMateriais" 
+					var="m" 
+					value="#{materiaisView.materiais}">
+            
+            		<p:column headerText="Código">
+                		<h:outputText value="#{m.id}" />
+            		</p:column>
+            
+            		<p:column headerText="Descrição">
+                		<h:outputText value="#{m.descricao}" />
+            		</p:column>
+        		</p:dataTable>
     		</p:panel>
     	</h:form>
+    	
+    	<ui:include src="dlgMateriais.xhtml" />
 	</ui:define>
 </ui:composition>
