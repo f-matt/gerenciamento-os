@@ -11,7 +11,56 @@
 	
 	<ui:define name="content">
 		<h2>Cadastro de Materiais</h2>
-	
-		<h3>Em construção...</h3>
+		
+		<h:form id="formMateriais">
+			<p:panel header="Pesquisa de Materiais">
+				<div class="ui-g">
+    				<div class="ui-g-2">
+    					<p:outputLabel for="idMaterial" value="Código:" />
+    				</div>
+    				<div class="ui-g-10">
+    					<p:inputText id="idMaterial" 
+    						value="#{materiaisView.codigoPesquisa}" />
+    				</div>
+    				<div class="ui-g-2">
+    					<p:outputLabel for="descricao" 
+    						value="Descrição:" />
+    				</div>
+    				<div class="ui-g-10">
+    					<p:inputText id="descricao" 
+    						value="#{materiaisView.descricaoPesquisa}" />
+    				</div>
+    				
+    				<div class="ui-g-12">
+    					<p:commandButton id="btnPesquisa" 
+    						value="Pesquisar"
+    						icon="pi pi-search" 
+    						action="#{materiaisView.pesquisa}"
+    						update="tblMateriais" />
+    						
+    					<p:commandButton id="btnNovo" 
+    						value="Novo"
+    						icon="pi pi-plus" 
+    						action="#{materiaisView.novo}"
+    						style="margin-left: 10px" />
+    				</div>
+    			</div>
+    			
+    			<p:dataTable id="tblMateriais" 
+					var="m" 
+					value="#{materiaisView.materiais}">
+            
+            		<p:column headerText="Código">
+                		<h:outputText value="#{m.id}" />
+            		</p:column>
+            
+            		<p:column headerText="Descrição">
+                		<h:outputText value="#{m.descricao}" />
+            		</p:column>
+        		</p:dataTable>
+    		</p:panel>
+    	</h:form>
+    	
+    	<ui:include src="dlgMateriais.xhtml" />
 	</ui:define>
 </ui:composition>
