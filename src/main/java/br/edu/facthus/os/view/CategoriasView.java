@@ -45,6 +45,7 @@ public class CategoriasView implements Serializable {
 
 
 
+
     public Integer getCodigoPesquisa() {
         return codigoPesquisa;
     }
