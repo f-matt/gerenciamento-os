@@ -2,12 +2,13 @@ package br.edu.facthus.os.service;
 
 import java.util.List;
 
+import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
 import br.edu.facthus.os.model.Cliente;
 
-
+@Stateless
 public class ClientesService {
 	
 	@PersistenceContext
