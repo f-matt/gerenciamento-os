@@ -9,17 +9,14 @@ import javax.persistence.Id;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 
-
-// T12Atualizar
-
-
 @Entity
 @NamedQueries({
 	@NamedQuery(name = "Tecnico.findAll",
-			query = "SELECT m"
-					+ "FROM Tecnico m"
-					+ "ORDER BY m.descricao")
+			query = "SELECT t "
+					+ "FROM Tecnico t "
+					+ "ORDER BY t.nome")
 })
+
 public class Tecnico implements Serializable{
 	
 	private static final long serialVersionUID = 1L;

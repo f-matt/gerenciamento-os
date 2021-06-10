@@ -8,10 +8,6 @@ import javax.persistence.PersistenceContext;
 
 import br.edu.facthus.os.model.Tecnico;
 
-
-
-// T17: Atualizar
-
 @Stateless
 public class TecnicosService {
 	
