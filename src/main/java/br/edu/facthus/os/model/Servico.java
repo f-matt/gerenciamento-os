@@ -9,8 +9,6 @@ import javax.persistence.Id;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 
-// T11: Atualizar
-
 @Entity
 @NamedQueries({
 	@NamedQuery(name = "Servico.findAll", 
